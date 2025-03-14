@@ -21,10 +21,10 @@
         String valeur3 = request.getParameter("valeur3");
     %>
 
-    <% if (valeur1 != null && valeur2 != null && !valeur1.isEmpty() && !valeur2.isEmpty()) { %>
-        <% int intValeur1 = Integer.parseInt(valeur1); %>
-        <% int intValeur2 = Integer.parseInt(valeur2); %>
-        
+    <% if (valeur1 != null && valeur2 != null && !valeur1.isEmpty() && !valeur2.isEmpty()) {
+        int intValeur1 = Integer.parseInt(valeur1);
+        int intValeur2 = Integer.parseInt(valeur2);
+    %>
         <% if (intValeur1 > intValeur2) { %>
             <p>Valeur 1 est supérieure à Valeur 2.</p>
         <% } else if (intValeur1 < intValeur2) { %>
@@ -35,8 +35,11 @@
     <% } %>
 
     <h2>Exercice 1 : Comparaison 1</h2>
-    <% if (valeur1 != null && valeur2 != null && valeur3 != null && !valeur1.isEmpty() && !valeur2.isEmpty() && !valeur3.isEmpty()) { %>
-        <% int intValeur3 = Integer.parseInt(valeur3); %>
+    <% if (valeur1 != null && valeur2 != null && valeur3 != null && !valeur1.isEmpty() && !valeur2.isEmpty() && !valeur3.isEmpty()) {
+        int intValeur1 = Integer.parseInt(valeur1);
+        int intValeur2 = Integer.parseInt(valeur2);
+        int intValeur3 = Integer.parseInt(valeur3);
+    %>
         <% if (intValeur3 > intValeur1 && intValeur3 < intValeur2) { %>
             <p>Oui, C est compris entre A et B.</p>
         <% } else { %>
@@ -45,8 +48,9 @@
     <% } %>
 
     <h2>Exercice 2 : Pair ou Impair ?</h2>
-    <% if (valeur1 != null && !valeur1.isEmpty()) { %>
-        <% int nombre = Integer.parseInt(valeur1); %>
+    <% if (valeur1 != null && !valeur1.isEmpty()) {
+        int nombre = Integer.parseInt(valeur1);
+    %>
         <% if (nombre % 2 == 0) { %>
             <p>Le nombre <%= nombre %> est pair.</p>
         <% } else { %>
