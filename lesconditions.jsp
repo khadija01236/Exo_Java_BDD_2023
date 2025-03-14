@@ -10,7 +10,7 @@
     <form action="#" method="post">
         <p>Saisir la valeur 1 : <input type="text" id="valeur1" name="valeur1"></p>
         <p>Saisir la valeur 2 : <input type="text" id="valeur2" name="valeur2"></p>
-        <p>Saisir la valeur 3 (pour l'exercice 1) : <input type="text" id="valeur3" name="valeur3"></p>
+        <p>Saisir la valeur 3 (pour l'exercice sur les comparaisons) : <input type="text" id="valeur3" name="valeur3"></p>
         <p><input type="submit" value="Afficher"></p>
     </form>
 
@@ -41,9 +41,9 @@
         int intValeur3 = Integer.parseInt(valeur3);
     %>
         <% if (intValeur3 > intValeur1 && intValeur3 < intValeur2) { %>
-            <p>Oui, C est compris entre A et B.</p>
+            <p>Oui, Val3 est compris entre Val1 et Val2.</p>
         <% } else { %>
-            <p>Non, C n'est pas compris entre A et B.</p>
+            <p>Non, Val3 n'est pas compris entre Val1 et Val2.</p>
         <% } %>
     <% } %>
 
