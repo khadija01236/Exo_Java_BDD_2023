@@ -29,7 +29,7 @@
             for(int i = 0; i < cpt; i++) { 
                 out.print("*");
             } 
-            out.println();
+            out.print();
        } 
     %>
     </pre>
@@ -40,7 +40,7 @@
             for(int j = 0; j < i; j++) { 
                 out.print("*");
             } 
-            out.println();
+            out.print();
        } 
     %>
     </pre>
@@ -51,7 +51,7 @@
             for(int j = 0; j < i; j++) { 
                 out.print("*");
             } 
-            out.println();
+            out.print();
        } 
     %>
     </pre>
@@ -65,7 +65,7 @@
             for(int k = 0; k < i; k++) { 
                 out.print("*");
             } 
-            out.println();
+            out.print();
        } 
     %>
     </pre>
@@ -79,7 +79,7 @@
             for(int k = 0; k < (2 * i - 1); k++) { 
                 out.print("*");
             } 
-            out.println();
+            out.print();
        } 
     %>
     </pre>
@@ -102,7 +102,7 @@
             for(int k = 0; k < i; k++) { 
                 out.print("*");
             } 
-            out.println();
+            out.print();
        }
     %>
     </pre>
