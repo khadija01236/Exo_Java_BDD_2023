@@ -24,15 +24,15 @@
     %>
 
     <h2>Exercice 1 : Le carré d'étoiles</h2>
-   <pre>
-<% for(int j = 0; j < cpt; j++) { 
-        for(int i = 0; i < cpt; i++) { 
-            out.print("*");
-        } 
-        out.print("<br>");
-   } 
-%>
-</pre>
+    <pre>
+    <% for(int j = 0; j < cpt; j++) { 
+            for(int i = 0; i < cpt; i++) { 
+                out.print("*");
+            } 
+            out.print("<br>");
+       } 
+    %>
+    </pre>
 
     <h2>Exercice 2 : Triangle rectangle gauche</h2>
     <pre>
@@ -65,7 +65,7 @@
             for(int k = 0; k < i; k++) { 
                 out.print("*");
             } 
-           out.print("<br>");
+            out.print("<br>");
        } 
     %>
     </pre>
@@ -93,7 +93,7 @@
             for(int k = 0; k < i; k++) { 
                 out.print("*");
             } 
-            out.println();
+            out.print("<br>");
        }
        for(int i = cpt; i > 0; i--) { 
             for(int j = 0; j < cpt - i; j++) { 
@@ -110,7 +110,7 @@
     <h2>Exercice 7 : Table de multiplication</h2>
     <pre>
     <% for(int i = 1; i <= 10; i++) { 
-            out.println(cpt + " x " + i + " = " + (cpt * i));
+            out.print(cpt + " x " + i + " = " + (cpt * i) + "<br>");
        } 
     %>
     </pre>
