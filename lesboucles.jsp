@@ -28,6 +28,8 @@
 <h2>Exercice 1 : Le carré d'étoiles</h2>
 <p>Ecrire le code afin de produire un carré d'étoile</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
+
+
 public class Main {
   public static void main(String[] args) {
     
@@ -44,6 +46,8 @@ public class Main {
 
   }
 }
+
+
 <p>*****</br>*****</br>*****</br>*****</br>*****</p>
 
 <h2>Exercice 2 : Triangle rectangle gauche</h2>
