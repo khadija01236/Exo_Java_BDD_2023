@@ -1,26 +1,37 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <html>
 <head>
-    <title>Ajouter une tâche</title>
+<title>Taches</title>
 </head>
-<body>
-    <h1>Ajouter une nouvelle tâche</h1>
-    
-    <form action="TaskServlet" method="post">
-        <label for="titre">Titre :</label>
-        <input type="text" id="titre" name="titre" required><br><br>
+<body bgcolor=white>
+<h1>Saisir une tache</h1>
+<form action="#" method="post">
+    <label for="inputValeur">Saisir le nom d'une tache : </label>
+    <input type="text" id="inputValeur" name="valeur">
+    <input type="submit" value="Enregistrer">
+</form>
 
-        <label for="description">Description :</label><br>
-        <textarea id="description" name="description" rows="4" cols="40" required></textarea><br><br>
+<%! 
+    class MyClass {
+        String nameTache;
 
-        <label for="date">Date d'échéance :</label>
-        <input type="date" id="date" name="date" required><br><br>
+        public MyClass(String name) {
+            nameTache = name;
+        }
+    }
+%>
 
-        <input type="submit" value="Ajouter la tâche">
-    </form>
+<%
+    String valeur = request.getParameter("valeur");
 
-    <br>
-    <a href="lesconditions.jsp">Voir les tâches</a>
+    if (valeur != null && !valeur.isEmpty()) {
+        MyClass tache = new MyClass(valeur);
+%>
+        <p>Nom de la tÃ¢che : <%= tache.nameTache %></p>
+<%
+    }
+%>
+
 </body>
 </html>
